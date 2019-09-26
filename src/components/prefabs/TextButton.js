@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaDotCircle } from 'react-icons/fa';
 
 export class TextButton extends Component {
 	render() {
-		const { icon, text } = this.props;
+		const { text } = this.props;
 		return (
 			<div className='Button'>
 				<FaDotCircle className='icon' />
@@ -19,7 +18,8 @@ export class TextButton extends Component {
 TextButton.propTypes = {
 	// icon: PropTypes.string,
 	// iconPosition: PropTypes.oneOf([ 'left', 'right' ]),
-	text: PropTypes.string.isRequired
+	text: PropTypes.string.isRequired,
+	onClick: PropTypes.func.isRequired
 };
 
 export default TextButton;

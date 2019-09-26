@@ -4,7 +4,6 @@ import { Header, Footer } from './components/layout';
 import { Home, About } from './components/pages';
 import './components/styles/App.scss';
 import data from './components/statics/site_content.json';
-// import Button from './Button';
 
 class App extends Component {
 	render() {
@@ -15,7 +14,7 @@ class App extends Component {
 					<Header />
 
 					<div className='Page'>
-						<Route exact path='/' component={Home} />
+						<Route exact path='/' render={(props) => <Home {...props} data={data} />} />
 						<Route path='/about' component={About} />
 						<Route path='/topics' component={Topics} />
 					</div>
