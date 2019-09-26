@@ -1,3 +1,4 @@
 import TextButton from './TextButton';
+import AppStoreButton from './AppStoreButton';
 
-export { TextButton };
+export { TextButton, AppStoreButton };

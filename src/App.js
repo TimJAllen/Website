@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
 import { Home, About } from './components/pages';
 import './components/styles/App.scss';
-import data from './components/statics/site_content.json';
+import data from './statics/site_content.json';
 
 class App extends Component {
 	render() {

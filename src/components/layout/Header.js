@@ -5,14 +5,29 @@ export class Header extends Component {
 	render() {
 		return (
 			<div className='Header'>
-				<Link to='/'>Home</Link>
-				<Link to='/about'>About</Link>
-				<Link to='/topics'>Topics</Link>
+				<h2 className='title'>
+					{'{'} TIM'S CODE {'}'}
+				</h2>
+				<ul>
+					<li>
+						<Link to='/' className='link active'>
+							Home
+						</Link>
+					</li>
+					<li>
+						<Link to='/about' className='link'>
+							About
+						</Link>
+					</li>
+					<li>
+						<Link to='/topics' className='link'>
+							Topics
+						</Link>
+					</li>
+				</ul>
 			</div>
 		);
 	}
 }
-
-Header.propTypes = {};
 
 export default Header;
