@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
 import { Home, About } from './components/pages';
 import './components/styles/App.scss';
 import data from './statics/site_content.json';
+
+const HeaderWithRoute = withRouter((props) => <Header {...props} />);
 
 class App extends Component {
 	render() {
@@ -11,12 +13,12 @@ class App extends Component {
 		return (
 			<Router>
 				<div className='Global-container'>
-					<Header />
+					<HeaderWithRoute />
 
 					<div className='Page'>
 						<Route exact path='/' render={(props) => <Home {...props} data={data} />} />
-						<Route path='/about' component={About} />
-						<Route path='/topics' component={Topics} />
+						<Route path='/about' render={(props) => <About {...props} data={data.about} />} />
+						<Route path='/topics' render={(props) => <Topics {...props} data={data} />} />
 					</div>
 
 					<Footer />

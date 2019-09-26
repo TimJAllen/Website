@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 
 export class Header extends Component {
 	render() {
+		console.log(this.props.location.pathname);
 		return (
 			<div className='Header'>
 				<h2 className='title'>
-					{'{'} TIM'S CODE {'}'}
+					<div className='brackets'>{'{'}</div>
+					TIM'S CODE
+					<div className='brackets'>{'}'}</div>
 				</h2>
 				<ul>
 					<li>
@@ -21,7 +24,7 @@ export class Header extends Component {
 					</li>
 					<li>
 						<Link to='/topics' className='link'>
-							Topics
+							Projects
 						</Link>
 					</li>
 				</ul>

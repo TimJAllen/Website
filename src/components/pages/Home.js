@@ -6,10 +6,9 @@ import { Project } from './';
 export class Home extends Component {
 	render() {
 		const { projects } = this.props.data;
-		console.log(this.props);
 		return (
 			<div className='content'>
-				<h2>Home</h2>
+				{/* <h2>Home</h2> */}
 				<div style={{ display: 'flex', flexDirection: 'row' }}>
 					<TextButton text={'Test 1'} onClick={() => {}} />
 					<TextButton text={'Long test button name'} onClick={() => {}} />

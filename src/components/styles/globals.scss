@@ -1,17 +1,18 @@
 $background-color: #353535;
-$background-color-dark: #242424;
-$background-color-light: #525252;
+$background-color-dark: #111111;
+$background-color-light: #464646;
 $primary-color: #5db6c4;
 $primary-color-highlighted: #368a97;
 $secondary-highlight: #eaf5f7;
 $drop-shadow: #00000080;
 
 $text: #eee;
+$text-unfocused: #e0e0e0b0;
 
 $button-padding: 5px;
 
 $header-height: 100px;
-$footer-height: 40px;
+// $footer-height: 40px;
 $page-height: calc(100vh - 100px);
 
 $content-spacing: 20px;
