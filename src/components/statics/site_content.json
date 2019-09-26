@@ -1,0 +1,61 @@
+{
+	"projects": [
+		{
+			"name": "PupMe",
+			"description": "Having a ruff day?",
+			"links": {
+				"appstore": {
+					"available": "true",
+					"link": "google.com"
+				},
+				"playstore": {
+					"available": "true",
+					"link": "google.com"
+				},
+				"website": "google.com"
+			},
+			"images": "",
+			"content": [
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				},
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				}
+			]
+		},
+		{
+			"name": "PupMe 2",
+			"description": "Having a ruff day?",
+			"links": {
+				"appstore": {
+					"available": "true",
+					"link": "google.com"
+				},
+				"playstore": {
+					"available": "true",
+					"link": "google.com"
+				},
+				"website": "google.com"
+			},
+			"images": "",
+			"content": [
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				},
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				}
+			]
+		}
+	],
+	"education": {},
+	"experience": {},
+	"skills": {},
+	"about": {},
+	"bio": {}
+}
