@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TextButton } from './../prefabs';
-import { Project } from './';
+import { TextButton, ProjectPeak } from './../prefabs';
+import { ProjectList } from './';
 
 export class Home extends Component {
 	render() {
-		const { projects } = this.props.data;
+		const { data } = this.props;
 		return (
 			<div className='content'>
-				{/* <h2>Home</h2> */}
+				<h2>Home</h2>
 				<div style={{ display: 'flex', flexDirection: 'row' }}>
 					<TextButton text={'Test 1'} onClick={() => {}} />
 					<TextButton text={'Long test button name'} onClick={() => {}} />
 				</div>
 				<TextButton text={'Test 1'} onClick={() => {}} />
 				<TextButton text={'Long test button name'} onClick={() => {}} />
-				{projects.map((p) => <Project project={p} key={p.name} />)}
+				<ProjectList data={data} />
 			</div>
 		);
 	}

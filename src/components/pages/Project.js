@@ -4,10 +4,10 @@ import { AppStoreButton } from './../prefabs';
 
 export class Project extends Component {
 	render() {
-		const { name, description, fullDescription, links } = this.props.project;
+		const { displayName, description, fullDescription, links } = this.props.project;
 		const { appstore, playstore } = links;
 
-		const Title = () => (name ? <h1 className='title'>{name}</h1> : '');
+		const Title = () => (displayName ? <h1 className='title'>{displayName}</h1> : '');
 		const Description = () => (description ? <p>{description}</p> : '');
 		const FullDescription = () => (fullDescription ? <p>{fullDescription}</p> : '');
 		const Buttons = () =>

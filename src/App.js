@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
-import { Home, About } from './components/pages';
+import { Home, About, ProjectList } from './components/pages';
 import './components/styles/App.scss';
 import data from './statics/site_content.json';
 
@@ -19,6 +19,7 @@ class App extends Component {
 						<Route exact path='/' render={(props) => <Home {...props} data={data} />} />
 						<Route path='/about' render={(props) => <About {...props} data={data.about} />} />
 						<Route path='/topics' render={(props) => <Topics {...props} data={data} />} />
+						<Route path='/projects' render={(props) => <ProjectList {...props} data={data} />} />
 					</div>
 
 					<Footer />

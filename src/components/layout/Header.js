@@ -23,8 +23,18 @@ export class Header extends Component {
 						</Link>
 					</li>
 					<li>
-						<Link to='/topics' className='link'>
+						<Link to='/projects' className='link'>
 							Projects
+						</Link>
+					</li>
+					<li>
+						<Link to='/experience' className='link'>
+							Experience
+						</Link>
+					</li>
+					<li>
+						<Link to='/resume' className='link'>
+							Resume
 						</Link>
 					</li>
 				</ul>

@@ -1,7 +1,7 @@
 {
 	"projects": [
 		{
-			"name": "PupMe",
+			"name": "pupme",
 			"displayName": "PupMe",
 			"description": "Having a ruff day?",
 			"fullDescription": "Having a ruff day? Know you're gonna be stressed out later? Dreading that 9am class you have? - Don't worry anymore! With PupMe you can schedule to have cute photos of your favorite dogs and cats sent directly to your phone through push notifications.\nSimply open the app, turn on 'push notifications' and schedule to have dog and cat photos sent to you when you need it most.\nFeatures include:\nUnlimited notifications\nDog / Cat options\nCat facts\n100% free\nV1.0.0 - iOS/Android",
@@ -29,8 +29,64 @@
 			]
 		},
 		{
-			"name": "PupMe 2",
-			"displayName": "PupMe",
+			"name": "other1",
+			"displayName": "Other Project",
+			"description": "Having a ruff day?",
+			"fullDescription": "Having a ruff day? Know you're gonna be stressed out later? Dreading that 9am class you have? - Don't worry anymore! With PupMe you can schedule to have cute photos of your favorite dogs and cats sent directly to your phone through push notifications.\nSimply open the app, turn on 'push notifications' and schedule to have dog and cat photos sent to you when you need it most.\nFeatures include:\nUnlimited notifications\nDog / Cat options\nCat facts\n100% free\nV1.0.0 - iOS/Android",
+			"links": {
+				"appstore": {
+					"available": true,
+					"link": "google.com"
+				},
+				"playstore": {
+					"available": true,
+					"link": "google.com"
+				},
+				"website": "google.com"
+			},
+			"images": "",
+			"content": [
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				},
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				}
+			]
+		},
+		{
+			"name": "other2",
+			"displayName": "Other name",
+			"description": "Having a ruff day?",
+			"fullDescription": "Having a ruff day? Know you're gonna be stressed out later? Dreading that 9am class you have? - Don't worry anymore! With PupMe you can schedule to have cute photos of your favorite dogs and cats sent directly to your phone through push notifications.\nSimply open the app, turn on 'push notifications' and schedule to have dog and cat photos sent to you when you need it most.\nFeatures include:\nUnlimited notifications\nDog / Cat options\nCat facts\n100% free\nV1.0.0 - iOS/Android",
+			"links": {
+				"appstore": {
+					"available": true,
+					"link": "google.com"
+				},
+				"playstore": {
+					"available": true,
+					"link": "google.com"
+				},
+				"website": "google.com"
+			},
+			"images": "",
+			"content": [
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				},
+				{
+					"title": "PupMe",
+					"text": "Having a ruff day?"
+				}
+			]
+		},
+		{
+			"name": "another",
+			"displayName": "somethin",
 			"description": "Having a ruff day?",
 			"fullDescription": "Having a ruff day? Know you're gonna be stressed out later? Dreading that 9am class you have? - Don't worry anymore! With PupMe you can schedule to have cute photos of your favorite dogs and cats sent directly to your phone through push notifications.\nSimply open the app, turn on 'push notifications' and schedule to have dog and cat photos sent to you when you need it most.\nFeatures include:\nUnlimited notifications\nDog / Cat options\nCat facts\n100% free\nV1.0.0 - iOS/Android",
 			"links": {

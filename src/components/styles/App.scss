@@ -25,6 +25,7 @@ p {
 //#################### HEADER ####################
 .Header {
 	// height: $header-height;
+	padding: 0 $content-vertical-spacing;
 	background-color: $primary-color;
 	display: flex;
 	flex-direction: column;
@@ -75,15 +76,19 @@ p {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
-		background-color: $primary-color-highlighted;
+		display: flex;
+		flex-direction: row;
+		background-color: $primary-color;
 		width: 100%;
+		border-top: solid 1px $primary-color-highlighted;
 
 		li {
 			float: left;
 			flex: 1;
 			display: flex;
-			flex-direction: row;
+			-webkit-box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
+			-moz-box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
+			box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
 
 			.link {
 				display: inline-block;
@@ -94,20 +99,21 @@ p {
 				flex: 1;
 
 				&:hover {
-					background-color: $background-color;
+					background-color: $primary-color-highlighted;
 				}
 			}
 		}
 	}
 
 	.active {
-		background-color: $primary-color;
+		background-color: $primary-color-highlighted;
 	}
 }
 
 //#################### PAGE CONTENT ####################
 .Page {
-	padding: $content-spacing;
+	// padding: $content-spacing;
+	padding: $content-spacing $content-vertical-spacing;
 	min-height: $page-height;
 	background-color: $background-color;
 	color: $text;
@@ -157,7 +163,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 4px;
+	padding: 4px $content-vertical-spacing;
 
 	p {
 		text-align: center;
@@ -173,11 +179,13 @@ p {
 	flex-direction: row;
 	padding: $button-padding;
 	margin: $button-padding;
-	border-radius: 10px;
+	border: 0px;
+	border-radius: $border-radius;
 	background: $primary-color;
 	align-items: center;
 	justify-content: flex-start;
 	width: fit-content;
+	text-decoration: none;
 
 	.icon {
 		width: 20px;
@@ -208,11 +216,39 @@ p {
 	width: auto;
 	height: 48px;
 	margin: 10px;
-	// -webkit-filter: grayscale(100%);
-	// filter: grayscale(100%);
+}
 
-	// &:hover {
-	// 	-webkit-filter: grayscale(0%);
-	// 	filter: grayscale(0%);
-	// }
+.Project-Peak {
+	height: 148px;
+	display: flex;
+	flex-direction: row;
+	background-color: $background-color-light;
+	margin: 10px;
+	max-width: 100%;
+	border-radius: $border-radius;
+
+	img {
+		float: left;
+		height: 100%;
+		width: auto;
+	}
+
+	.text-container {
+		flex: 1;
+		// align-items: center;
+		display: flex;
+		flex-direction: column;
+
+		.title {
+			margin: 0px 10px;
+			flex: 1;
+			// text-align: center;
+		}
+
+		.description {
+			flex: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
 }
