@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TextButton, ProjectPeak } from './../prefabs';
+import { TextButton } from './../prefabs';
 import { ProjectList } from './';
 
 export class Home extends Component {

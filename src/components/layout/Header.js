@@ -1,9 +1,49 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+class NavBarElement extends Component {
+	render() {
+		const { link, title, path } = this.props;
+		let isActive =
+			path.substring(1, path.length).indexOf('/') === -1
+				? path === link
+				: path.substring(0, path.substring(1, path.length).indexOf('/') + 1) === link;
+		return (
+			<li>
+				<Link to={link} className={`link${isActive ? ' active' : ''}`}>
+					{title}
+				</Link>
+			</li>
+		);
+	}
+}
+
+const tabs = [
+	{
+		link: '/',
+		title: 'Home'
+	},
+	{
+		link: '/about',
+		title: 'About'
+	},
+	{
+		link: '/projects',
+		title: 'Projects'
+	},
+	{
+		link: '/experience',
+		title: 'Experience'
+	},
+	{
+		link: '/resume',
+		title: 'Resume'
+	}
+];
+
 export class Header extends Component {
 	render() {
-		console.log(this.props.location.pathname);
+		const { pathname } = this.props.location;
 		return (
 			<div className='Header'>
 				<h2 className='title'>
@@ -11,33 +51,7 @@ export class Header extends Component {
 					TIM'S CODE
 					<div className='brackets'>{'}'}</div>
 				</h2>
-				<ul>
-					<li>
-						<Link to='/' className='link active'>
-							Home
-						</Link>
-					</li>
-					<li>
-						<Link to='/about' className='link'>
-							About
-						</Link>
-					</li>
-					<li>
-						<Link to='/projects' className='link'>
-							Projects
-						</Link>
-					</li>
-					<li>
-						<Link to='/experience' className='link'>
-							Experience
-						</Link>
-					</li>
-					<li>
-						<Link to='/resume' className='link'>
-							Resume
-						</Link>
-					</li>
-				</ul>
+				<ul>{tabs.map((e) => <NavBarElement title={e.title} link={e.link} path={pathname} />)}</ul>
 			</div>
 		);
 	}
