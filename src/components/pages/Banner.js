@@ -4,11 +4,11 @@ import { FaLinkedin, FaAngellist, FaGithub } from 'react-icons/fa';
 class Banner extends Component {
 	render() {
 		return (
-			<section class='page banner'>
+			<section className='page banner' id='home'>
 				<h1>Timothy</h1>
 				<h1>Allen</h1>
 				<p>Full stack software developer and designer</p>
-				<divider />
+				<div className='divider' />
 				<div className='icon-container'>
 					<FaLinkedin className='icon' />
 					<FaAngellist className='icon' />

@@ -12,13 +12,13 @@ $text-unfocused: #e0e0e0b0;
 $button-padding: 5px;
 $border-radius: 10px;
 
-$header-height: 65px;
+$header-height: 64px;
 // $footer-height: 40px;
 $page-height: calc(100vh - 100px);
 
 // --------
 
-$content-spacing: 40px;
+$content-spacing: -40px;
 $content-vertical-spacing: calc(calc(100vw - 840px) / 2);
 
 $mainBG: #fff;

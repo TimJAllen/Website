@@ -1,50 +1,32 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
+const scrollWithOffset = (el, offset) => {
+	const elementPosition = el.offsetTop - offset;
+	window.scroll({
+		top: elementPosition,
+		left: 0,
+		behavior: 'smooth'
+	});
+};
 
 class NavBarElement extends Component {
 	render() {
-		const { link, title, path } = this.props;
-		let isActive =
-			path.substring(1, path.length).indexOf('/') === -1
-				? path === link
-				: path.substring(0, path.substring(1, path.length).indexOf('/') + 1) === link;
-		return <div className={`navbarTab${isActive ? ' active' : ''}`}>{title}</div>;
+		const { title } = this.props;
+		return (
+			<Link smooth to={`#${title}`} scroll={(el) => scrollWithOffset(el, 64)} className='navbarTab'>
+				{title.toUpperCase()}
+			</Link>
+		);
 	}
 }
 
-const tabs = [
-	{
-		link: '/',
-		title: 'Home'
-	},
-	{
-		link: '/about',
-		title: 'Intro'
-	},
-	{
-		link: '/projects',
-		title: 'About'
-	},
-	{
-		link: '/experience',
-		title: 'Skills'
-	},
-	{
-		link: '/resume',
-		title: 'Background'
-	},
-	{
-		link: '/resume',
-		title: 'Projects'
-	}
-];
+const tabs = [ 'home', 'intro', 'about', 'skills', 'background', 'projects' ];
 
 class Header extends Component {
 	render() {
-		const { pathname } = this.props.location;
-		return (
-			<div className='header'>{tabs.map((e) => <NavBarElement title={e.title} link={e.link} path={pathname} />)}</div>
-		);
+		return <div className='header'>{tabs.map((e) => <NavBarElement title={e} key={e} />)}</div>;
 	}
 }
 

@@ -4,7 +4,15 @@ class Footer extends Component {
 	render() {
 		return (
 			<div className='page footer'>
-				<p>© Tim Allen 2019</p>
+				<p>Always looking for more experience!</p>
+				<div>
+					Location
+					<p>Bay Area, California</p>
+				</div>
+				<div>
+					Email
+					<p>TimJAllen.ta@gmail.com</p>
+				</div>
 				<p>Someone please hire me, I want a job. :(</p>
 			</div>
 		);

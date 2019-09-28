@@ -1,245 +1,5 @@
 @import 'globals.scss';
-
-//#################### PROPERTIES ####################
-// .link {
-// 	color: #61dafb;
-// }
-
-// h1 {
-// 	color: $primary-color;
-// }
-
-// h2 {
-// 	padding: 10px;
-// 	margin: 0px;
-// }
-
-// p {
-// 	margin: 10px;
-// }
-
-// .Global-container {
-// 	background-color: $background-color;
-// }
-
-// //#################### HEADER ####################
-// .Header {
-// 	// height: $header-height;
-// 	padding: 0 $content-vertical-spacing;
-// 	background-color: $primary-color;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	font-size: calc(10px + 2vmin);
-// 	color: $text;
-// 	border-bottom: solid black 2px;
-
-// 	.title {
-// 		flex: 1;
-// 		vertical-align: middle;
-// 		display: flex;
-// 		flex-direction: row;
-
-// 		.brackets {
-// 			padding: 0px 6px 0px 6px;
-// 			color: $text-unfocused;
-// 		}
-// 	}
-
-// 	ul {
-// 		list-style-type: none;
-// 		margin: 0;
-// 		padding: 0;
-// 		display: flex;
-// 		flex-direction: row;
-// 		background-color: $primary-color;
-// 		width: 100%;
-// 		border-top: solid 1px $primary-color-highlighted;
-
-// 		li {
-// 			float: left;
-// 			flex: 1;
-// 			display: flex;
-// 			-webkit-box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
-// 			-moz-box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
-// 			box-shadow: inset 0 8px 4px -4px $primary-color-highlighted;
-
-// 			.link {
-// 				display: inline-block;
-// 				color: $text;
-// 				text-align: center;
-// 				padding: 4px 6px;
-// 				text-decoration: none;
-// 				flex: 1;
-
-// 				&:hover {
-// 					background-color: $primary-color-highlighted;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	.active {
-// 		background-color: $primary-color-highlighted;
-// 	}
-// }
-
-//#################### PAGE CONTENT ####################
-// .Page {
-// 	// padding: $content-spacing;
-// 	padding: $content-spacing $content-vertical-spacing;
-// 	min-height: $page-height;
-// 	background-color: $background-color;
-// 	color: $text;
-// 	-webkit-box-shadow: inset 0 8px 4px -4px $drop-shadow;
-// 	-moz-box-shadow: inset 0 8px 4px -4px $drop-shadow;
-// 	box-shadow: inset 0 8px 4px -4px $drop-shadow;
-
-// 	//This will space out all children except the first one
-// 	// .content {
-// 	// 	> * {
-// 	// 		display: block;
-// 	// 		margin-top: $content-spacing;
-// 	// 	}
-
-// 	// 	> *:first-child {
-// 	// 		margin-top: 0px;
-// 	// 	}
-// 	// }
-// }
-
-// .Project {
-// 	background-color: $background-color-light;
-// 	// padding-right: $content-spacing;
-// 	// padding-left: $content-spacing;
-
-// 	.title {
-// 		margin-left: 10px;
-// 	}
-
-// 	.appstore-buttons {
-// 		display: flex;
-// 		flex-direction: row;
-// 		justify-content: center;
-
-// 		// * {
-// 		// 	margin: 0px 10px 0px 10px;
-// 		// }
-// 	}
-// }
-
-// //#################### FOOTER ####################
-// .Footer {
-// 	// height: $footer-height;
-// 	background-color: $background-color-dark;
-// 	color: $text-unfocused;
-// 	vertical-align: middle;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: space-around;
-// 	padding: 4px $content-vertical-spacing;
-
-// 	p {
-// 		text-align: center;
-// 		flex: 1;
-// 		padding: 0px;
-// 		margin: 0px;
-// 	}
-// }
-
-// //#################### PREFABS ####################
-// .Button {
-// 	display: flex;
-// 	flex-direction: row;
-// 	padding: $button-padding;
-// 	margin: $button-padding;
-// 	border: 0px;
-// 	border-radius: $border-radius;
-// 	background: $primary-color;
-// 	align-items: center;
-// 	justify-content: flex-start;
-// 	width: fit-content;
-// 	text-decoration: none;
-
-// 	.icon {
-// 		width: 20px;
-// 		color: $text;
-// 		margin-right: 10;
-// 	}
-
-// 	.spacing {
-// 		width: 4px;
-// 	}
-
-// 	.text {
-// 		min-width: 100px;
-// 		color: $text;
-// 		font-size: 20px;
-// 		font-weight: bold;
-// 		white-space: nowrap;
-// 		// overflow: hidden;
-// 		// text-overflow: ellipsis;
-// 	}
-
-// 	&:hover {
-// 		background: $primary-color-highlighted;
-// 	}
-// }
-
-// .App-Store-Button {
-// 	width: auto;
-// 	height: 48px;
-// 	margin: 10px;
-// }
-
-// .Project-Peak {
-// 	height: 148px;
-// 	display: flex;
-// 	flex-direction: row;
-// 	background-color: $background-color-light;
-// 	margin: 10px;
-// 	max-width: 100%;
-// 	border-radius: $border-radius;
-
-// 	img {
-// 		float: left;
-// 		height: 100%;
-// 		width: auto;
-// 	}
-
-// 	.text-container {
-// 		flex: 1;
-// 		// align-items: center;
-// 		display: flex;
-// 		flex-direction: column;
-
-// 		.title {
-// 			margin: 0px 10px;
-// 			flex: 1;
-// 			// text-align: center;
-// 		}
-
-// 		.description {
-// 			flex: 1;
-// 			overflow: hidden;
-// 			text-overflow: ellipsis;
-// 		}
-// 	}
-// }
-
-// .Banner {
-// 	height: 500px;
-// 	z-index: -100;
-// 	// position: fixed;
-
-// 	.float-children {
-// 		position: absolute;
-// 		top: 200px;
-// 		left: 200px;
-// 		width: 100%;
-// 	}
-// }
+// https://autoprefixer.github.io/
 
 h1 {
 	color: $text-light;
@@ -251,7 +11,7 @@ h1 {
 
 h2 {
 	color: $text-dark;
-	margin: 0px;
+	margin: 10px 0px;
 	padding: 0px;
 	font-size: calc(25px + 2vmin);
 }
@@ -270,7 +30,6 @@ p {
 }
 
 .main-container {
-	// margin-top: $header-height;
 	> :nth-child(even) {
 		background-color: $mainBG-dark;
 	}
@@ -284,7 +43,6 @@ p {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
-	font-size: calc(10px + 2vmin);
 	color: $text;
 	border-bottom: solid $mainBG-black 2px;
 	top: 0;
@@ -297,30 +55,38 @@ p {
 
 	.navbarTab {
 		margin: 0px 3px;
+		color: $text;
+		text-decoration: none;
 	}
 
 	.active {
-		color: $primary-color-highlighted;
+		color: $primary-color;
+	}
+
+	& :hover {
+		color: $primary-color;
+		cursor: pointer;
 	}
 }
 
 .page {
 	background: $mainBG;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	padding-left: $content-vertical-spacing;
-	padding-right: $content-vertical-spacing;
+	padding: 40px $content-vertical-spacing;
+
+	> * {
+		padding: 0px 10px;
+	}
 }
 
 .banner {
 	background-image: url('./../../statics/images/bg.jpg');
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 55vh;
 
-	divider {
-		margin-top: 10px;
+	.divider {
+		margin: 10px 0px 0px 10px;
 		height: 1px;
 		width: 40vw;
 		background-color: $mainBG-divider;
@@ -332,6 +98,11 @@ p {
 		.icon {
 			font-size: calc(40px + 2vmin);
 			margin: 15px 8px;
+			cursor: pointer;
+		}
+
+		& :hover {
+			filter: brightness(50%);
 		}
 
 		& :first-child {
@@ -350,7 +121,7 @@ p {
 
 	.right-container {
 		flex: 6;
-		margin-left: 40px;
+		// margin-left: 40px;
 	}
 }
 
@@ -358,18 +129,13 @@ p {
 	display: flex;
 	flex-direction: row;
 
+	div + div {
+		margin-left: 20px;
+	}
+
 	.grouping {
 		flex: 1;
 		flex-direction: column;
-		margin: 10px;
-
-		&:first-child {
-			margin-left: 0px;
-		}
-
-		&:last-child {
-			margin-right: 0px;
-		}
 
 		img {
 			width: 100%;
@@ -379,8 +145,71 @@ p {
 	}
 }
 
+.skills {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		// text-align: center;
+
+		div + div {
+			margin-left: 10px;
+		}
+
+		.item {
+			padding: 20px;
+			flex: 1;
+			height: 250px;
+			// width: 200px;
+			margin-bottom: 10px;
+		}
+
+		& :hover {
+			background-color: $mainBG-dark;
+		}
+	}
+}
+
+.background {
+}
+
+.project-list {
+	.project-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		// text-align: center;
+
+		div + div {
+			margin-left: 10px;
+		}
+		.project {
+			flex: 1;
+			// margin: 0px 0px;
+			// background-color: $mainBG-dark;
+
+			img {
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
+				width: 180px;
+				height: auto;
+				cursor: pointer;
+			}
+			& :hover {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0%);
+			}
+		}
+	}
+}
+
 .footer {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	border-top: 2px solid $mainBG-divider;
+
+	> * {
+		flex: 1;
+	}
 }

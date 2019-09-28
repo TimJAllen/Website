@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
 import { Banner, About, ProjectList, Intro, Skills, Background } from './components/pages';
 import './components/styles/App.scss';
 import data from './statics/site_content.json';
 
-const HeaderWithRoute = withRouter((props) => <Header {...props} />);
+// const HeaderWithRoute = withRouter((props) => <Header {...props} />);
 
 class App extends Component {
 	render() {
@@ -13,7 +13,7 @@ class App extends Component {
 		return (
 			<Router>
 				<div className='main-container'>
-					<HeaderWithRoute />
+					<Header />
 					<Banner />
 					<Intro />
 					<About />
