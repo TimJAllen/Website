@@ -29,6 +29,10 @@ p {
 	padding: 6px 0px;
 }
 
+// div {
+// 	transition: all 0.5s ease;
+// }
+
 .main-container {
 	> :nth-child(even) {
 		background-color: $mainBG-dark;
@@ -160,12 +164,29 @@ p {
 			padding: 20px;
 			flex: 1;
 			height: 250px;
-			// width: 200px;
 			margin-bottom: 10px;
+			transition: all 0.5s ease;
 		}
 
-		& :hover {
+		.divider {
+			width: 0px;
+			height: 2px;
+			background-color: $mainBG-divider;
+			transition: all 0.5s ease;
+		}
+
+		& > :hover {
 			background-color: $mainBG-dark;
+			padding: 40px 20px 0px 20px;
+			p {
+				color: $text-dark;
+			}
+			h3 {
+				color: $primary-color;
+			}
+			.divider {
+				width: 100%;
+			}
 		}
 	}
 }

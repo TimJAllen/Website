@@ -3,13 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
 import { Banner, About, ProjectList, Intro, Skills, Background } from './components/pages';
 import './components/styles/App.scss';
-import data from './statics/site_content.json';
-
-// const HeaderWithRoute = withRouter((props) => <Header {...props} />);
 
 class App extends Component {
 	render() {
-		console.log(data);
 		return (
 			<Router>
 				<div className='main-container'>
