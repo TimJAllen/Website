@@ -12,9 +12,21 @@ $text-unfocused: #e0e0e0b0;
 $button-padding: 5px;
 $border-radius: 10px;
 
-$header-height: 100px;
+$header-height: 65px;
 // $footer-height: 40px;
 $page-height: calc(100vh - 100px);
 
-$content-spacing: 20px;
-$content-vertical-spacing: calc(calc(100vw - 1024px) / 2);
+// --------
+
+$content-spacing: 40px;
+$content-vertical-spacing: calc(calc(100vw - 840px) / 2);
+
+$mainBG: #fff;
+$mainBG-dark: #fafafa;
+$mainBG-divider: #e7e7e7;
+
+$mainBG-black: #222;
+
+$text-dark: #383838;
+$text-medium: #999999;
+$text-light: #fafafa;

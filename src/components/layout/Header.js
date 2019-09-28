@@ -8,13 +8,7 @@ class NavBarElement extends Component {
 			path.substring(1, path.length).indexOf('/') === -1
 				? path === link
 				: path.substring(0, path.substring(1, path.length).indexOf('/') + 1) === link;
-		return (
-			<li>
-				<Link to={link} className={`link${isActive ? ' active' : ''}`}>
-					{title}
-				</Link>
-			</li>
-		);
+		return <div className={`navbarTab${isActive ? ' active' : ''}`}>{title}</div>;
 	}
 }
 
@@ -25,34 +19,31 @@ const tabs = [
 	},
 	{
 		link: '/about',
-		title: 'About'
+		title: 'Intro'
 	},
 	{
 		link: '/projects',
-		title: 'Projects'
+		title: 'About'
 	},
 	{
 		link: '/experience',
-		title: 'Experience'
+		title: 'Skills'
 	},
 	{
 		link: '/resume',
-		title: 'Resume'
+		title: 'Background'
+	},
+	{
+		link: '/resume',
+		title: 'Projects'
 	}
 ];
 
-export class Header extends Component {
+class Header extends Component {
 	render() {
 		const { pathname } = this.props.location;
 		return (
-			<div className='Header'>
-				<h2 className='title'>
-					<div className='brackets'>{'{'}</div>
-					TIM'S CODE
-					<div className='brackets'>{'}'}</div>
-				</h2>
-				<ul>{tabs.map((e) => <NavBarElement title={e.title} link={e.link} path={pathname} />)}</ul>
-			</div>
+			<div className='header'>{tabs.map((e) => <NavBarElement title={e.title} link={e.link} path={pathname} />)}</div>
 		);
 	}
 }
