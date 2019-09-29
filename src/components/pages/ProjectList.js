@@ -10,22 +10,27 @@ class ProjectList extends Component {
 					<div className='project'>
 						<img src={image} alt='' />
 						<h3>PupMe</h3>
-						<p>Super short description maybe a list of technologies</p>
-						<a href='#about'>read more</a>
+						<p>Mobile app for scheduling dog and cat photos to be sent to your phone.</p>
+						<a href='#projects'>READ MORE</a>
 					</div>
 					<div className='project'>
 						<img src={image} alt='' />
 						<h3>Connect'd</h3>
-						<p>Super short description maybe a list of technologies</p>
-						<a href='#about'>read more</a>
+						<p>
+							Cofounded AddMe LLC to create an app that lets people share any and all social media platforms at once.
+						</p>
+						<a href='#projects'>READ MORE</a>
 					</div>
 					<div className='project'>
 						<img src={image} alt='' />
 						<h3>Collideascope</h3>
-						<p>Super short description maybe a list of technologies</p>
-						<a href='#about'>read more</a>
+						<p>Mobile game about colors and collisions. Based on a typo I made.</p>
+						<a href='#projects'>READ MORE</a>
 					</div>
 				</div>
+				<p>
+					Check out this project on github! <a href='#projects'>FORK ME</a>
+				</p>
 			</section>
 		);
 	}

@@ -22,7 +22,7 @@ class NavBarElement extends Component {
 	}
 }
 
-const tabs = [ 'home', 'intro', 'about', 'skills', 'background', 'projects' ];
+const tabs = [ 'home', 'intro', 'about', 'skills', 'experience', 'projects' ];
 
 class Header extends Component {
 	render() {

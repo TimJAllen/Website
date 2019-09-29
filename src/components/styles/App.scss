@@ -20,7 +20,14 @@ h3 {
 	color: $text-dark;
 	margin: 0px;
 	padding: 0px;
-	font-size: calc(12px + 2vmin);
+	font-size: calc(16px + 2vmin);
+}
+
+h4 {
+	color: $text-medium;
+	margin: 0px;
+	padding: 0px;
+	font-size: calc(10px + 2vmin);
 }
 
 p {
@@ -28,10 +35,6 @@ p {
 	margin: 6px 0px;
 	padding: 6px 0px;
 }
-
-// div {
-// 	transition: all 0.5s ease;
-// }
 
 .main-container {
 	> :nth-child(even) {
@@ -97,11 +100,10 @@ p {
 	}
 
 	.icon-container {
-		color: $text-light;
-
 		.icon {
 			font-size: calc(40px + 2vmin);
 			margin: 15px 8px;
+			color: $text-light;
 			cursor: pointer;
 		}
 
@@ -154,6 +156,7 @@ p {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		// overflow: hidden;
 		// text-align: center;
 
 		div + div {
@@ -163,7 +166,7 @@ p {
 		.item {
 			padding: 20px;
 			flex: 1;
-			height: 250px;
+			min-height: 250px;
 			margin-bottom: 10px;
 			transition: all 0.5s ease;
 		}
@@ -191,10 +194,41 @@ p {
 	}
 }
 
-.background {
+.experience {
+	.jobs {
+		display: flex;
+		flex-direction: row;
+
+		.job {
+			flex: 1;
+			border-top: 1px solid $mainBG-divider;
+			border-left: 1px solid $mainBG-divider;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			padding: 8px;
+			transition: all 0.5s ease;
+		}
+		> *:hover {
+			background-color: $mainBG;
+			padding: 14px 8px 2px 8px;
+		}
+
+		div ~ div {
+			margin-left: 10px;
+		}
+	}
 }
 
 .project-list {
+	a {
+		margin-top: auto;
+		// background-color: red;
+		width: auto;
+		text-decoration: none;
+		color: $text-medium;
+		font-weight: bold;
+	}
+
 	.project-list {
 		display: flex;
 		flex-direction: row;
@@ -204,10 +238,11 @@ p {
 		div + div {
 			margin-left: 10px;
 		}
+
 		.project {
 			flex: 1;
-			// margin: 0px 0px;
-			// background-color: $mainBG-dark;
+			display: flex;
+			flex-direction: column;
 
 			img {
 				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

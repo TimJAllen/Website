@@ -14,14 +14,17 @@ class Skills extends Component {
 					<div className='item'>
 						<h3>Front End</h3>
 						<div className='divider' />
-						<p>React, React Native, CSS, CSS preprocessor SCSS, Flexbox, Emotion</p>
-						<p>node: react-native-elements, react-native-vector-icons, emotion, react-native-qrcode-scanner</p>
+						<p>React, React Native, CSS3, CSS preprocessor SCSS, Flexbox, Emotion, React Router DOM</p>
+						<p>
+							node: react-native-elements, react-native-vector-icons, emotion, react-native-qrcode-scanner,
+							react-router-dom
+						</p>
 					</div>
 					<div className='item'>
 						<h3>Back End</h3>
 						<div className='divider' />
-						<p>Express, Digital Ocean, Linux command line, nginx, Let's Encrypt</p>
-						<p>node: express, graphql, graphql-errors, graphql-tools, firebase-admin, uuid</p>
+						<p>NodeJS, Express, Digital Ocean, Linux command line, nginx, Let's Encrypt</p>
+						<p>node: express, graphql, graphql-errors, graphql-tools, firebase-admin, uuid, bcryptjs</p>
 					</div>
 					<div className='item'>
 						<h3>Full Stack</h3>

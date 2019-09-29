@@ -5,6 +5,6 @@ import ProjectList from './ProjectList';
 import Banner from './Banner';
 import Intro from './Intro';
 import Skills from './Skills';
-import Background from './Background';
+import Experience from './Experience';
 
-export { About, Home, Project, ProjectList, Banner, Intro, Skills, Background };
+export { About, Home, Project, ProjectList, Banner, Intro, Skills, Experience };

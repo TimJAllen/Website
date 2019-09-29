@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Header, Footer } from './components/layout';
-import { Banner, About, ProjectList, Intro, Skills, Background } from './components/pages';
+import { Banner, About, ProjectList, Intro, Skills, Experience } from './components/pages';
 import './components/styles/App.scss';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
 					<Intro />
 					<About />
 					<Skills />
-					<Background />
+					<Experience />
 					<ProjectList />
 					<Footer />
 				</div>
