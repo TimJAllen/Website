@@ -8,7 +8,7 @@ class Banner extends Component {
 				<h1>Timothy</h1>
 				<h1>Allen</h1>
 				<p>Full stack software developer and designer</p>
-				<div className='divider' />
+				<div className='divider medium' />
 				<div className='icon-container'>
 					<a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/timothyallen6/'>
 						<FaLinkedin className='icon' />

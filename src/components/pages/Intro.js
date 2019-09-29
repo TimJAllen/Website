@@ -18,6 +18,15 @@ class Intro extends Component {
 						I am capable of picking up on new programming languages and libraries on the fly, and am very skilled with
 						being a team leader, and a technical project manager.
 					</p>
+					<div className='divider' />
+					<p className='quote'>
+						"Tim is someone that is willing to put in the extra time and effort to learn what is needed to get the job
+						done. When we worked on Connect'd together, there were aspects of the project he didn't originally know -
+						but he was able to GET IT DONE. That's probably one of the things that I admire about him most. Personally,
+						Tim is a great team player. Open to always working well with others as well as able to communicate technical
+						jargon with non-technical individuals. It's really great because he can bridge that gap that usually lies
+						between engineering and the business side of things." - Nicholas Ayala, past cofounder
+					</p>
 				</div>
 			</section>
 		);

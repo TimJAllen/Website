@@ -36,6 +36,29 @@ p {
 	padding: 6px 0px;
 }
 
+.divider {
+	margin: 10px 0px 10px 0px;
+	height: 2px;
+	width: 100%;
+	background-color: $mainBG-divider;
+	&.small {
+		width: 20%;
+	}
+	&.medium {
+		width: 40%;
+	}
+	&.large {
+		width: 80%;
+	}
+}
+
+.quote {
+	color: $text-medium;
+	padding-left: 50px;
+	// padding-right: 50px;
+	// background-color: $
+}
+
 .main-container {
 	> :nth-child(even) {
 		background-color: $mainBG-dark;
@@ -91,13 +114,6 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 55vh;
-
-	.divider {
-		margin: 10px 0px 0px 10px;
-		height: 1px;
-		width: 40vw;
-		background-color: $mainBG-divider;
-	}
 
 	.icon-container {
 		.icon {
@@ -214,7 +230,7 @@ p {
 		}
 
 		div ~ div {
-			margin-left: 10px;
+			margin-left: 20px;
 		}
 	}
 }
@@ -239,9 +255,22 @@ p {
 			margin-left: 10px;
 		}
 
-		// & :hover {
-		// 	background-color: $mainBG-dark;
-		// }
+		& :hover {
+			// background-color: $mainBG-dark;
+			h3,
+			p,
+			a {
+				color: $mainBG-black;
+				// padding: 0px;
+			}
+			.img {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0%);
+				padding: 0px;
+				width: 200px;
+				border-radius: 38px;
+			}
+		}
 
 		.project {
 			flex: 1;
@@ -253,13 +282,18 @@ p {
 				filter: grayscale(100%);
 				width: 180px;
 				height: auto;
-				cursor: pointer;
+				// cursor: pointer;
+				padding: 10px;
 				border-radius: 40px;
+				transition: all 0.5s ease;
 			}
-			& :hover {
-				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(0%);
-			}
+			// & :hover {
+			// 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+			// 	filter: grayscale(0%);
+			// 	padding: 0px;
+			// 	width: 200px;
+			// 	border-radius: 38px;
+			// }
 		}
 	}
 

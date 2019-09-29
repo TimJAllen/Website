@@ -6,7 +6,7 @@ import image_collideascope from './../../statics/images/collideascope.png';
 const Project = ({ img, title, text, link, handleClick }) => {
 	return (
 		<div className='project' onClick={() => handleClick()}>
-			<img src={img} alt='' />
+			<img src={img} alt='' className='img' />
 			<h3>{title}</h3>
 			<p>{text}</p>
 			<a href={link}>READ MORE</a>
@@ -54,7 +54,7 @@ class ProjectList extends Component {
 					<Project
 						img={image_collideascope}
 						title={'Collideascope'}
-						text={'Mobile game about colors and collisions. Based on a typo I made.'}
+						text={'Mobile game about colors and collisions. Based on a typo I made. Collideascope vs Kaleidoscope'}
 						link={'#projects/collideascope'}
 						handleClick={() => {
 							this.handleClick(2);
@@ -64,6 +64,10 @@ class ProjectList extends Component {
 				{/* <div className='project-insight active'>
 					<h1>YEET {screens[this.state.index]}</h1>
 				</div> */}
+				<div className='divider' />
+				<h3>This website too!</h3>
+				<p>This website was made from scratch using React, SCSS, and AWS Amplify</p>
+				<p>node: react, react-router-dom, react-icons, react-router-hash-link</p>
 				<p>
 					Check out this project on github! |{' '}
 					<a target='_blank' rel='noopener noreferrer' href='https://github.com/TimJAllen/Website'>
