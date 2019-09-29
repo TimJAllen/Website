@@ -30,7 +30,7 @@ class Skills extends Component {
 						<h3>Full Stack</h3>
 						<div className='divider' />
 						<p>JavaScript, ES6 Frameworks (React, Redux), Babel, PM2, NPM, Yarn</p>
-						<p>node: babel, redux, redux-devtools-extension, redux-persist, lodash</p>
+						<p>node: babel, redux, redux-devtools-extension, redux-persist, lodash, PropTypes</p>
 					</div>
 				</div>
 				<div className='container'>

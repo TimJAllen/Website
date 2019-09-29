@@ -6,6 +6,7 @@ class Experience extends Component {
 			<section className='page experience' id='experience'>
 				<h2>Experience</h2>
 				<p>Software developer with 10+ years experience in related fields.</p>
+				<p>Cofounder of app-first software company, and publisher of multiple iOS/Android apps.</p>
 				<div className='jobs'>
 					<div className='job'>
 						<h3>Cofounder & CTO</h3>
@@ -48,9 +49,20 @@ class Experience extends Component {
 						<p>- Led classrooms through complicated lessons on game design, basic data structure, and data types.</p>
 					</div>
 				</div>
-				<p>Skills and Endorsements:</p>
-				<p>Certifications:</p>
-				<p>Courses:</p>
+				<p>
+					<b>Skills and Endorsements:</b> LinkedIn's C# Assessment Certification
+				</p>
+				<p>
+					<b>Activities and Societies:</b> IDEAs Incubator & Accelerator program project manager, Delta Sigma Phi
+					fraternity property manager, Body Building Club executive officer, Residents Hall Government board executive
+					member, Information and Security club member
+				</p>
+				<p>
+					<b>Courses:</b> Intro to Programming, Intro to Data Structures, Computer Tools for Business, Fundamentals of
+					Management Information, Systems Analysis and Design, Networking and Data Communications, Advanced Database
+					Management Systems, Advanced Networking & Database Communications, Quantitative Business Analysis, MIS
+					Practicum, Business Strategy and Information Systems
+				</p>
 			</section>
 		);
 	}
