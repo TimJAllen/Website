@@ -30,6 +30,15 @@ h4 {
 	font-size: calc(10px + 2vmin);
 }
 
+a {
+	margin-top: auto;
+	// background-color: red;
+	width: auto;
+	text-decoration: none;
+	color: $text-medium;
+	font-weight: bold;
+}
+
 p {
 	color: $text-medium;
 	margin: 6px 0px;
@@ -37,7 +46,7 @@ p {
 }
 
 .divider {
-	margin: 10px 0px 10px 0px;
+	margin: 10px;
 	height: 2px;
 	width: 100%;
 	background-color: $mainBG-divider;
@@ -53,10 +62,22 @@ p {
 }
 
 .quote {
-	color: $text-medium;
-	padding-left: 50px;
-	// padding-right: 50px;
-	// background-color: $
+	color: $text;
+	padding: 0px 40px;
+	margin: 0px 40px;
+
+	.block {
+		display: flex;
+		flex-direction: row;
+		.quotation {
+			font-size: calc(80px + 2vmin);
+		}
+	}
+	.speaker {
+		text-align: end;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
 }
 
 .main-container {
@@ -109,11 +130,13 @@ p {
 }
 
 .banner {
-	background-image: url('./../../statics/images/bg.jpg');
+	background-image: url('./../../statics/images/bg2.jpeg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 55vh;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
 
 	.icon-container {
 		.icon {
@@ -135,15 +158,18 @@ p {
 
 .intro {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 
-	.left-container {
-		flex: 1;
-	}
+	.containers {
+		display: flex;
+		flex-direction: row;
+		.left {
+			flex: 1;
+		}
 
-	.right-container {
-		flex: 6;
-		// margin-left: 40px;
+		.right {
+			flex: 6;
+		}
 	}
 }
 
@@ -162,7 +188,8 @@ p {
 		img {
 			width: 100%;
 			height: auto;
-			// background-color: red;
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
 		}
 	}
 }
@@ -180,7 +207,7 @@ p {
 		}
 
 		.item {
-			padding: 20px;
+			padding: 40px 20px 0px 20px;
 			flex: 1;
 			min-height: 250px;
 			margin-bottom: 10px;
@@ -190,13 +217,14 @@ p {
 		.divider {
 			width: 0px;
 			height: 2px;
+			margin-left: 0px;
 			background-color: $mainBG-divider;
 			transition: all 0.5s ease;
 		}
 
 		& > :hover {
 			background-color: $mainBG-dark;
-			padding: 40px 20px 0px 20px;
+			padding: 20px;
 			p {
 				color: $text-dark;
 			}
@@ -221,35 +249,28 @@ p {
 			border-left: 1px solid $mainBG-divider;
 			border-top-right-radius: 20px;
 			border-bottom-left-radius: 20px;
-			padding: 8px;
+			padding: 14px 8px 2px 8px;
 			transition: all 0.5s ease;
 		}
 		> *:hover {
 			background-color: $mainBG;
-			padding: 14px 8px 2px 8px;
+			padding: 8px;
 		}
 
 		div ~ div {
 			margin-left: 20px;
 		}
 	}
+	> *:not(:first-child) {
+		margin-top: 20px;
+	}
 }
 
 .project-list {
-	a {
-		margin-top: auto;
-		// background-color: red;
-		width: auto;
-		text-decoration: none;
-		color: $text-medium;
-		font-weight: bold;
-	}
-
-	.project-list {
+	.project-peak {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		// text-align: center;
 
 		div + div {
 			margin-left: 10px;
@@ -287,37 +308,24 @@ p {
 				border-radius: 40px;
 				transition: all 0.5s ease;
 			}
-			// & :hover {
-			// 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-			// 	filter: grayscale(0%);
-			// 	padding: 0px;
-			// 	width: 200px;
-			// 	border-radius: 38px;
-			// }
 		}
 	}
 
-	.project-insight {
-		width: 100%;
-		background-color: red;
-		transition: all 1s ease;
-		height: 0px;
-		visibility: hidden;
-		overflow: hidden;
-		> * {
-			transition: all 1s ease;
-			visibility: hidden;
+	.project-full {
+		background-color: $mainBG-dark;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		padding: 20px;
+		text-align: left;
+		p {
+			text-align: left;
+			padding: 2px 0px;
+			margin: 2px 0px;
 		}
-	}
-	.active {
-		transition: all 1s ease;
-		min-height: 200px;
-		height: auto;
-		visibility: visible;
-		transition: all 1s ease;
-		> * {
-			transition: all 1s ease;
-			visibility: visible;
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
@@ -330,5 +338,12 @@ p {
 
 	> * {
 		flex: 1;
+	}
+
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		font-size: calc(25px + 2vmin);
 	}
 }

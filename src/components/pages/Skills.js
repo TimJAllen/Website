@@ -6,8 +6,8 @@ class Skills extends Component {
 			<section className='page skills' id='skills'>
 				<h2>Skills</h2>
 				<p>
-					Jack of all trades: I have over 10 years of experience in a plethora of languages including JavaScript, C#,
-					Python, Java, and PLSQL.
+					I have over 10 years of experience in a plethora of languages including JavaScript, C#, Python, Java, and
+					PLSQL.
 				</p>
 				<p>Dedicated code documenter and an excited learner.</p>
 				<div className='container'>

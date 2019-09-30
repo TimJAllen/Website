@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaPaperclip } from 'react-icons/fa';
 
 class Experience extends Component {
 	render() {
@@ -50,7 +51,13 @@ class Experience extends Component {
 					</div>
 				</div>
 				<p>
+					<b>Degree:</b> B.S. Business MIS (Management Information Systems), San Jose State University
+				</p>
+				<p>
 					<b>Skills and Endorsements:</b> LinkedIn's C# Assessment Certification
+				</p>
+				<p>
+					<b>Class Projects:</b> SJSU BUS4-92 Elite project winner, SJSU BUS4-119a project lead
 				</p>
 				<p>
 					<b>Activities and Societies:</b> IDEAs Incubator & Accelerator program project manager, Delta Sigma Phi
@@ -62,6 +69,18 @@ class Experience extends Component {
 					Management Information, Systems Analysis and Design, Networking and Data Communications, Advanced Database
 					Management Systems, Advanced Networking & Database Communications, Quantitative Business Analysis, MIS
 					Practicum, Business Strategy and Information Systems
+				</p>
+				<div className='divider' />
+				<p>
+					<FaPaperclip className='icon' /> Download my{' '}
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						href='http://drive.google.com/uc?export=download&id=1BBra-FdvOusr7yRK1Il-4gtT5gePyxpJ'
+					>
+						RESUME
+					</a>{' '}
+					to see more
 				</p>
 			</section>
 		);

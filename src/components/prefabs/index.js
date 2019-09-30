@@ -1,4 +1,4 @@
 import AppStoreButton from './AppStoreButton';
-import ProjectPeak from './ProjectPeak';
+import Quote from './Quote';
 
-export { AppStoreButton, ProjectPeak };
+export { AppStoreButton, Quote };

@@ -1,24 +1,8 @@
-$background-color: #353535;
-$background-color-dark: #111111;
-$background-color-light: #464646;
 $primary-color: #5db6c4;
 $primary-color-highlighted: #368a97;
-$secondary-highlight: #eaf5f7;
-$drop-shadow: #00000080;
-
-$text: #eee;
-$text-unfocused: #e0e0e0b0;
-
-$button-padding: 5px;
-$border-radius: 10px;
 
 $header-height: 64px;
-// $footer-height: 40px;
 $page-height: calc(100vh - 100px);
-
-// --------
-
-$content-spacing: -40px;
 $content-vertical-spacing: calc(calc(100vw - 960px) / 2);
 
 $mainBG: #fff;
@@ -27,6 +11,7 @@ $mainBG-divider: #e7e7e7;
 
 $mainBG-black: #222;
 
+$text: #eee;
 $text-dark: #383838;
 $text-medium: #999999;
 $text-light: #fafafa;
