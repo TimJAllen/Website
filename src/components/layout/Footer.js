@@ -6,14 +6,14 @@ class Footer extends Component {
 		return (
 			<div className='page footer'>
 				<p>Always looking for more experience!</p>
-				<div>
-					Location
-					<p>Bay Area, California</p>
-				</div>
-				<div>
-					Email
-					<p>TimJAllen.ta@gmail.com</p>
-				</div>
+				<p>
+					<b>Location</b>
+					<br />Bay Area, California
+				</p>
+				<p>
+					<b>Email</b>
+					<br />TimJAllen.ta@gmail.com
+				</p>
 				<div className='icons'>
 					<a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/timothyallen6/'>
 						<FaLinkedin className='icon' />

@@ -64,7 +64,7 @@ class ProjectList extends Component {
 						}}
 					/>
 				</div>
-				<AnimateHeight duration={500} height={height}>
+				{/* <AnimateHeight duration={500} height={height}>
 					<div className='project-full'>
 						<img src={connectd_full} alt='' className='img' />
 						<p>
@@ -94,7 +94,7 @@ class ProjectList extends Component {
 							Sequelize framework used to translate schematics to secure SQL queries on a separated MySQL server.
 						</p>
 					</div>
-				</AnimateHeight>
+				</AnimateHeight> */}
 				<div className='divider' />
 				<h3>This website too!</h3>
 				<p>

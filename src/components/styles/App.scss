@@ -48,8 +48,9 @@ p {
 .divider {
 	margin: 10px;
 	height: 2px;
-	width: 100%;
+	width: 95%;
 	background-color: $mainBG-divider;
+	box-sizing: border-box;
 	&.small {
 		width: 20%;
 	}
@@ -81,6 +82,9 @@ p {
 }
 
 .main-container {
+	box-sizing: border-box;
+	margin: 0px;
+
 	> :nth-child(even) {
 		background-color: $mainBG-dark;
 	}
@@ -117,6 +121,11 @@ p {
 	& :hover {
 		color: $primary-color;
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		height: 0px;
+		overflow: hidden;
 	}
 }
 
@@ -171,6 +180,12 @@ p {
 			flex: 6;
 		}
 	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		.containers {
+			flex-direction: column;
+		}
+	}
 }
 
 .about {
@@ -183,13 +198,34 @@ p {
 
 	.grouping {
 		flex: 1;
+		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 
 		img {
 			width: 100%;
 			height: auto;
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 			filter: grayscale(100%);
+		}
+	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		flex-direction: column;
+		div + div {
+			margin-left: 0px;
+		}
+		.grouping {
+			flex-direction: row;
+
+			img {
+				width: 0px;
+				height: 0px;
+			}
+
+			h3 + p {
+				padding-left: 10px;
+			}
 		}
 	}
 }
@@ -199,17 +235,19 @@ p {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		flex-flow: row wrap;
 		// overflow: hidden;
 		// text-align: center;
 
-		div + div {
-			margin-left: 10px;
-		}
+		// div + div {
+		// 	margin-left: 10px;
+		// }
 
 		.item {
 			padding: 40px 20px 0px 20px;
 			flex: 1;
 			min-height: 250px;
+			min-width: 200px;
 			margin-bottom: 10px;
 			transition: all 0.5s ease;
 		}
@@ -222,7 +260,8 @@ p {
 			transition: all 0.5s ease;
 		}
 
-		& > :hover {
+		& > :hover,
+		active {
 			background-color: $mainBG-dark;
 			padding: 20px;
 			p {
@@ -242,6 +281,7 @@ p {
 	.jobs {
 		display: flex;
 		flex-direction: row;
+		flex-flow: row wrap;
 
 		.job {
 			flex: 1;
@@ -251,8 +291,10 @@ p {
 			border-bottom-left-radius: 20px;
 			padding: 14px 8px 2px 8px;
 			transition: all 0.5s ease;
+			min-width: 200px;
 		}
-		> *:hover {
+		> *:hover,
+		active {
 			background-color: $mainBG;
 			padding: 8px;
 		}
@@ -264,6 +306,12 @@ p {
 	> *:not(:first-child) {
 		margin-top: 20px;
 	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		.jobs div ~ div {
+			margin-left: 0px;
+		}
+	}
 }
 
 .project-list {
@@ -271,12 +319,14 @@ p {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		flex-flow: row wrap;
 
 		div + div {
 			margin-left: 10px;
 		}
 
-		& :hover {
+		& :hover,
+		active {
 			// background-color: $mainBG-dark;
 			h3,
 			p,
@@ -288,7 +338,7 @@ p {
 				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 				filter: grayscale(0%);
 				padding: 0px;
-				width: 200px;
+				width: 180px;
 				border-radius: 38px;
 			}
 		}
@@ -301,7 +351,7 @@ p {
 			img {
 				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 				filter: grayscale(100%);
-				width: 180px;
+				width: 160px;
 				height: auto;
 				// cursor: pointer;
 				padding: 10px;
@@ -345,5 +395,12 @@ p {
 		flex-direction: row;
 		justify-content: flex-end;
 		font-size: calc(25px + 2vmin);
+	}
+
+	@media screen and (max-width: $mobile-breakpoint) {
+		flex-direction: column;
+		.icons {
+			justify-content: flex-start;
+		}
 	}
 }
