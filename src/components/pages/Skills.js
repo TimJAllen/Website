@@ -22,7 +22,7 @@ class Skills extends Component {
 				<div className='container'>
 					<Group
 						title='Front End'
-						text1='React, React Native, CSS3, CSS preprocessor SCSS, Flexbox, Emotion, React Router DOM'
+						text1='React, React Native, CSS3, HTML, CSS preprocessor SCSS, Flexbox, Emotion, React Router DOM, @media, transitions'
 						text2='node: react-native-elements, react-native-vector-icons, emotion, react-native-qrcode-scanner,
 							react-router-dom'
 					/>

@@ -5,7 +5,7 @@ class Footer extends Component {
 	render() {
 		return (
 			<div className='page footer'>
-				<p>Always looking for more experience!</p>
+				<p>Please hire me :)</p>
 				<p>
 					<b>Location</b>
 					<br />Bay Area, California

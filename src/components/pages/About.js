@@ -6,10 +6,10 @@ import img3 from './../../statics/images/img3.jpg';
 const Group = ({ title, text, img, reverse }) => {
 	return (
 		<div className='grouping'>
-			{reverse ? <img src={img} alt='' /> : null}
+			{reverse && <img src={img} alt='' />}
 			<h3>{title}</h3>
 			<p>{text}</p>
-			{!reverse ? <img src={img} alt='' /> : null}
+			{!reverse && <img src={img} alt='' />}
 		</div>
 	);
 };
