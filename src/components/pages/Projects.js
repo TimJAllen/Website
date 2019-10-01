@@ -98,7 +98,7 @@ class Projects extends Component {
 					Simple and elegant animations done using CSS transition properties. I chose to only use these because I
 					believe in keeping UIs simple and functional in how information is displayed.
 				</p>
-				<p>node: react, react-router-dom, react-icons, react-router-hash-link</p>
+				<p>node: react, react-icons, react-router-hash-link</p>
 				<p>
 					Check out this project on github! |{' '}
 					<a target='_blank' rel='noopener noreferrer' href='https://github.com/TimJAllen/Website'>

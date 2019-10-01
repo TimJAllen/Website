@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaLinkedin, FaAngellist, FaGithub, FaBitbucket } from 'react-icons/fa';
+import { FaLinkedin, FaAngellist, FaGithub } from 'react-icons/fa';
 
 class Banner extends Component {
 	render() {
@@ -19,9 +19,9 @@ class Banner extends Component {
 					<a target='_blank' rel='noopener noreferrer' href='https://github.com/TimJAllen'>
 						<FaGithub className='icon' />
 					</a>
-					<a target='_blank' rel='noopener noreferrer' href='https://bitbucket.org/timjallen/profile/repositories'>
+					{/* <a target='_blank' rel='noopener noreferrer' href='https://bitbucket.org/timjallen/profile/repositories'>
 						<FaBitbucket className='icon' />
-					</a>
+					</a> */}
 				</div>
 			</section>
 		);
