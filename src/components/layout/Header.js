@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { scrollWithOffset } from './../functions';
-import { FaListUl } from 'react-icons/fa';
+// import { FaListUl } from 'react-icons/fa';
 
 class NavBarElement extends Component {
 	render() {
@@ -22,9 +22,9 @@ class Header extends Component {
 		return (
 			<div className='header'>
 				<div className='navBar'>{tabs.map((e) => <NavBarElement title={e} key={e} />)}</div>
-				<div className='stack'>
+				{/* <div className='stack'>
 					<FaListUl className='icon' />
-				</div>
+				</div> */}
 			</div>
 		);
 	}

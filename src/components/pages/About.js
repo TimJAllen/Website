@@ -1,16 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import img1 from './../../statics/images/img1.jpg';
 import img2 from './../../statics/images/img2.jpg';
 import img3 from './../../statics/images/img3.jpg';
+import Media from 'react-media';
 
 const Group = ({ title, text, img, reverse }) => {
 	return (
-		<div className='grouping'>
-			{reverse && <img src={img} alt='' />}
-			<h3>{title}</h3>
-			<p>{text}</p>
-			{!reverse && <img src={img} alt='' />}
-		</div>
+		<Media
+			queries={{
+				mobile: '(max-width: 640px)'
+			}}
+		>
+			{(matches) => (
+				<Fragment>
+					{matches.mobile && (
+						<div className='grouping'>
+							{reverse && <img src={img} alt='' />}
+							<div className='mobile-column'>
+								<h3>{title}</h3>
+								<p>{text}</p>
+							</div>
+							{!reverse && <img src={img} alt='' />}
+						</div>
+					)}
+					{!matches.mobile && (
+						<div className='grouping'>
+							{reverse && <img src={img} alt='' />}
+							<h3>{title}</h3>
+							<p>{text}</p>
+							{!reverse && <img src={img} alt='' />}
+						</div>
+					)}
+				</Fragment>
+			)}
+		</Media>
 	);
 };
 

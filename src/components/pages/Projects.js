@@ -114,7 +114,7 @@ class Projects extends Component {
 						SEE THE CODE HERE
 					</a>
 				</p>
-				<p>Google Chrome's Audit results: Performance 98%, Accessibility 96%, Best Practices 93%, SEO 100%</p>
+				<p>Google Chrome's Audit results: Performance 99%, Accessibility 96%, Best Practices 93%, SEO 100%</p>
 			</section>
 		);
 	}

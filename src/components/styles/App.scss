@@ -119,21 +119,11 @@ p {
 			color: $primary-color;
 			cursor: pointer;
 		}
-
-		@media screen and (max-width: $mobile-breakpoint) {
-			width: 0px;
-			overflow: hidden;
-		}
 	}
-
-	.stack {
-		.icon {
-			margin: 0px 15px;
-		}
-		@media screen and (min-width: $mobile-breakpoint + 1px) {
-			width: 0px;
-			overflow: hidden;
-		}
+	@media screen and (max-width: $mobile-breakpoint) {
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
 	}
 }
 
@@ -222,17 +212,25 @@ p {
 		flex-direction: column;
 		div + div {
 			margin-left: 0px;
+			margin-top: 10px;
 		}
 		.grouping {
 			flex-direction: row;
 
-			img {
-				width: 0px;
-				height: 0px;
+			.mobile-column {
+				display: flex;
+				flex-direction: column;
+				h3,
+				p {
+					padding: 0px 10px;
+				}
 			}
 
-			h3 + p {
-				padding-left: 10px;
+			img {
+				width: 20%;
+				min-width: 150px;
+				height: auto;
+				object-fit: cover;
 			}
 		}
 	}
