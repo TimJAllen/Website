@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-
-const scrollWithOffset = (el, offset) => {
-	const elementPosition = el.offsetTop - offset;
-	window.scroll({
-		top: elementPosition,
-		left: 0,
-		behavior: 'smooth'
-	});
-};
+import { scrollWithOffset } from './../functions';
+import { FaListUl } from 'react-icons/fa';
 
 class NavBarElement extends Component {
 	render() {
@@ -26,7 +19,14 @@ const tabs = [ 'home', 'intro', 'about', 'skills', 'experience', 'projects' ];
 
 class Header extends Component {
 	render() {
-		return <div className='header'>{tabs.map((e) => <NavBarElement title={e} key={e} />)}</div>;
+		return (
+			<div className='header'>
+				<div className='navBar'>{tabs.map((e) => <NavBarElement title={e} key={e} />)}</div>
+				<div className='stack'>
+					<FaListUl className='icon' />
+				</div>
+			</div>
+		);
 	}
 }
 

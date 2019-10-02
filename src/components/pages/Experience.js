@@ -71,16 +71,18 @@ class Experience extends Component {
 					Practicum, Business Strategy and Information Systems
 				</p>
 				<div className='divider' />
+				<h2>Resume</h2>
 				<p>
 					<FaPaperclip className='icon' /> Download my{' '}
 					<a
 						target='_blank'
 						rel='noopener noreferrer'
 						href='http://drive.google.com/uc?export=download&id=1BBra-FdvOusr7yRK1Il-4gtT5gePyxpJ'
+						aria-label='Download resume'
 					>
 						RESUME
 					</a>{' '}
-					to see more
+					to see all details
 				</p>
 			</section>
 		);

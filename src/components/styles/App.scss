@@ -108,25 +108,32 @@ p {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 
-	.navbarTab {
-		margin: 0px 3px;
-		color: $text;
-		text-decoration: none;
+	.navBar {
+		.navbarTab {
+			margin: 0px 5px;
+			color: $text;
+			text-decoration: none;
+		}
+
+		& .navbarTab:hover {
+			color: $primary-color;
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: $mobile-breakpoint) {
+			width: 0px;
+			overflow: hidden;
+		}
 	}
 
-	.active {
-		color: $primary-color;
-	}
-
-	& :hover {
-		color: $primary-color;
-		cursor: pointer;
-	}
-
-	@media screen and (max-width: $mobile-breakpoint) {
-		height: 0px;
-		overflow: hidden;
-		border-bottom: 0px;
+	.stack {
+		.icon {
+			margin: 0px 15px;
+		}
+		@media screen and (min-width: $mobile-breakpoint + 1px) {
+			width: 0px;
+			overflow: hidden;
+		}
 	}
 }
 

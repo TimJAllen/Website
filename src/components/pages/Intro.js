@@ -27,10 +27,10 @@ class Intro extends Component {
 					<p>
 						Tim is someone that is willing to put in the extra time and effort to learn what is needed to get the job
 						done. When we worked on Connect'd together, there were aspects of the project he didn't originally know -
-						but he was able to GET IT DONE. That's probably one of the things that I admire about him most. Personally,
-						Tim is a great team player. Open to always working well with others as well as able to communicate technical
-						jargon with non-technical individuals. It's really great because he can bridge that gap that usually lies
-						between engineering and the business side of things.
+						but he was able to GET IT DONE. That's probably one of the things that I admire about him most. <br />
+						<br />Personally, Tim is a great team player. Open to always working well with others as well as able to
+						communicate technical jargon with non-technical individuals. It's really great because he can bridge that
+						gap that usually lies between engineering and the business side of things.
 					</p>
 				</Quote>
 			</section>

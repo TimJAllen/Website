@@ -4,14 +4,18 @@ import image_pupme from './../../statics/images/pupme.png';
 import image_connectd from './../../statics/images/Connectd.png';
 import image_collideascope from './../../statics/images/collideascope.png';
 import projects from './../../statics/projects';
+import { HashLink as Link } from 'react-router-hash-link';
+import { scrollWithOffset } from './../functions';
 
-const Project = ({ img, title, text, link, handleClick }) => {
+const Project = ({ img, title, text, handleClick }) => {
 	return (
-		<div className='project' onClick={() => handleClick()}>
+		<div className='project'>
 			<img src={img} alt='' className='img' />
 			<h3>{title}</h3>
 			<p>{text}</p>
-			<a href={link}>READ MORE</a>
+			<Link smooth to={`#project-detail`} scroll={(el) => scrollWithOffset(el, 84)} onClick={() => handleClick()}>
+				READ MORE
+			</Link>
 		</div>
 	);
 };
@@ -81,7 +85,7 @@ class Projects extends Component {
 						}}
 					/>
 				</div>
-				<AnimateHeight duration={500} height={height}>
+				<AnimateHeight duration={500} height={height} id='project-detail'>
 					<FullProject index={index} />
 				</AnimateHeight>
 				<div className='divider' />
@@ -101,10 +105,16 @@ class Projects extends Component {
 				<p>node: react, react-icons, react-router-hash-link</p>
 				<p>
 					Check out this project on github! |{' '}
-					<a target='_blank' rel='noopener noreferrer' href='https://github.com/TimJAllen/Website'>
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						href='https://github.com/TimJAllen/Website'
+						aria-label='View the project on Github'
+					>
 						SEE THE CODE HERE
 					</a>
 				</p>
+				<p>Google Chrome's Audit results: Performance 98%, Accessibility 96%, Best Practices 93%, SEO 100%</p>
 			</section>
 		);
 	}
