@@ -1,5 +1,6 @@
 @import 'globals.scss';
 // https://autoprefixer.github.io/
+@import 'globals.scss';
 
 h1 {
 	color: $text-light;
@@ -32,7 +33,6 @@ h4 {
 
 a {
 	margin-top: auto;
-	// background-color: red;
 	width: auto;
 	text-decoration: none;
 	color: $text-medium;
@@ -50,6 +50,7 @@ p {
 	height: 2px;
 	width: 95%;
 	background-color: $mainBG-divider;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	&.small {
 		width: 20%;
@@ -68,7 +69,12 @@ p {
 	margin: 0px 40px;
 
 	.block {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
 		.quotation {
 			font-size: calc(80px + 2vmin);
@@ -82,6 +88,7 @@ p {
 }
 
 .main-container {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0px;
 
@@ -94,9 +101,18 @@ p {
 	height: $header-height;
 	padding: 0 $content-vertical-spacing;
 	background-color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 	color: $text;
 	border-bottom: solid $mainBG-black 2px;
@@ -154,6 +170,7 @@ p {
 		}
 
 		& :hover {
+			-webkit-filter: brightness(80%);
 			filter: brightness(80%);
 		}
 
@@ -164,30 +181,52 @@ p {
 }
 
 .intro {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 
 	.containers {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
 		.left {
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
 			flex: 1;
 		}
 
 		.right {
+			-webkit-box-flex: 6;
+			-ms-flex: 6;
 			flex: 6;
 		}
 	}
 
 	@media screen and (max-width: $mobile-breakpoint) {
 		.containers {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
 		}
 	}
 }
 
 .about {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 
 	div + div {
@@ -195,9 +234,18 @@ p {
 	}
 
 	.grouping {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 
 		img {
@@ -209,16 +257,27 @@ p {
 	}
 
 	@media screen and (max-width: $mobile-breakpoint) {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		div + div {
 			margin-left: 0px;
 			margin-top: 10px;
 		}
 		.grouping {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
 			flex-direction: row;
 
 			.mobile-column {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
 				flex-direction: column;
 				h3,
 				p {
@@ -230,6 +289,7 @@ p {
 				width: 20%;
 				min-width: 150px;
 				height: auto;
+				-o-object-fit: cover;
 				object-fit: cover;
 			}
 		}
@@ -238,17 +298,29 @@ p {
 
 .skills {
 	.container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 
 		.item {
 			padding: 40px 20px 0px 20px;
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
 			flex: 1;
 			min-height: 200px;
 			min-width: 200px;
 			margin-bottom: 10px;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 		}
 
@@ -257,6 +329,8 @@ p {
 			height: 2px;
 			margin-left: 0px;
 			background-color: $mainBG-divider;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 		}
 
@@ -280,17 +354,27 @@ p {
 
 .experience {
 	.jobs {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 
 		.job {
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
 			flex: 1;
 			border-top: 1px solid $mainBG-divider;
 			border-left: 1px solid $mainBG-divider;
 			border-top-right-radius: 20px;
 			border-bottom-left-radius: 20px;
 			padding: 14px 8px 2px 8px;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			min-width: 200px;
 			margin-top: 10px;
@@ -318,19 +402,25 @@ p {
 
 .project-list {
 	.project-list {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 
 		& :hover,
 		active {
-			// background-color: $mainBG-dark;
 			h3,
 			p,
 			a {
 				color: $mainBG-black;
-				// padding: 0px;
 			}
 			.img {
 				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
@@ -342,8 +432,15 @@ p {
 		}
 
 		.project {
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
 			flex: 1;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
 			margin: 0px 10px;
 
@@ -354,6 +451,8 @@ p {
 				height: auto;
 				padding: 10px;
 				border-radius: 40px;
+				-webkit-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 			}
 		}
@@ -361,7 +460,12 @@ p {
 
 	.project-full {
 		background-color: $mainBG-dark;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 20px;
 		text-align: left;
@@ -371,9 +475,12 @@ p {
 			margin: 2px 0px;
 		}
 		img {
+			-ms-flex-item-align: center;
+			-ms-grid-row-align: center;
 			align-self: center;
 			max-width: 80%;
 			max-height: 350px;
+			-o-object-fit: contain;
 			object-fit: contain;
 			height: auto;
 		}
@@ -381,25 +488,46 @@ p {
 }
 
 .footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	border-top: 2px solid $mainBG-divider;
 
 	> * {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
 	}
 
 	.icons {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
 		justify-content: flex-end;
 		font-size: calc(25px + 2vmin);
 	}
 
 	@media screen and (max-width: $mobile-breakpoint) {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		.icons {
+			-webkit-box-pack: start;
+			-ms-flex-pack: start;
 			justify-content: flex-start;
 		}
 	}
